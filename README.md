@@ -1,9 +1,15 @@
-# Jekyll Development made easy
+# Jekyll website development made easy
 
-Learn more [about Jekyll][jekyll].
+<img
+src="https://user-images.githubusercontent.com/875669/35621353-e78a6956-0638-11e8-8e07-3d96e9e91dd7.png"
+height=48 width=72 alt="Docker Logo" /> <img
+src="https://user-images.githubusercontent.com/875669/42405293-405f1cae-8148-11e8-8c81-c464be1d36bb.jpeg"
+height=48 width=41 alt="Ruby Logo" /> <img
+src="https://user-images.githubusercontent.com/875669/42405359-638eff9a-8149-11e8-8812-fa950f6a0387.png"
+height=48 width=104 alt="Jekyll Logo" />
 
-This project aims to help getting started with Jekyll easy by using Docker for
-managing Jekyll dependencies.
+Learn more [about Jekyll][jekyll].  This project aims to help getting started
+with Jekyll easy by using [Docker][docker] for managing Jekyll dependencies.
 
 A development environment for Jekyll which solely relies on Docker to separate
 system dependencies.  This adds some sanity to jekyll website development which
