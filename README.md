@@ -71,20 +71,25 @@ to render your jekyll website.
 
 Visit `http://127.0.0.1:4000/` in your web browser to see the website.
 
-> Note: skip the interactive environment by running `docker-compose up -d`
+> Pro tip: skip the interactive environment by running `docker-compose up`.
 
 If you add ruby packages to your `Gemfile` then you'll want to rebuild your
-development container and update `Gemfile.lock`.  The following commands are
-relevant for achieving this.
+development container and update `Gemfile.lock`.  This must be done from within
+the interactive environment.  The following commands are relevant for achieving
+this.
 
 ```bash
-# update Gemfile.lock.
+# add your changes to Gemfile
+# enter the interactive environment
+make
+
+# update Gemfile.lock
 bundle install
 
-# exit the development environment.
+# exit the development environment
 exit
 
-# rebuild the development environment to include the new Gemfile changes.
+# rebuild the development environment to include the new Gemfile changes
 make build
 
 # restart the development environment which will now include new dependencies
