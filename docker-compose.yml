@@ -7,9 +7,11 @@ services:
     network_mode: "host"
     ports:
       - 4000
+    expose:
+      - 4000
     volumes:
       - '~/.gitconfig:/home/webdev/.gitconfig:ro'
       - '.:/www'
     working_dir: '/www'
     user: '1000:1000'
-    command: '/bin/bash -i'
+    tty: true

@@ -5,7 +5,7 @@
 # first time if it doesn't exist.  Finally, it will start the docker container
 # and drop the user into a development environment.
 interactive:
-	docker-compose run --service-ports --rm website
+	docker-compose run --service-ports --rm website /bin/bash
 
 
 # This command will automatically download the official alpine image if it

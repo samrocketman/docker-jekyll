@@ -21,7 +21,7 @@ USER webdev
 WORKDIR /home/webdev
 
 # install website dependencies
-COPY Gemfile* /home/webdev/
+COPY * /home/webdev/
 RUN gem install bundler && bundle install
 
 # default command
