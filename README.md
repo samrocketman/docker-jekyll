@@ -11,14 +11,13 @@ height=48 width=104 alt="Jekyll Logo" />
 Learn more [about Jekyll][jekyll].  This project aims to help getting started
 with Jekyll easy by using [Docker][docker] for managing Jekyll dependencies.
 
-A development environment for Jekyll which solely relies on Docker to separate
-system dependencies.  This adds some sanity to jekyll website development which
-allows contributors to easily start the web server and develop.
+This project is a development environment for Jekyll which solely relies on
+Docker provide all dependencies for Jekyll.
 
 This simplifies development in Ruby and Jekyll by providing an environment with
 all dependencies satisfied.  Otherwise, developing multiple Jekyll websites and
 even multiple Ruby applications will be fraught with peril since they'll likely
-have different dependencies.
+have clashing dependencies if managed from the same environment.
 
 # Features
 
@@ -116,10 +115,10 @@ To delete, run the following.
 # Is it Magic?
 
 No!  The `make` command reads and runs the [`Makefile`](Makefile).  The
-`Makefile` includes several targets: `interactive`, `build`, `clean`.  You can
-run any of the targets by running `make [TARGET]`.  If no `TARGET` is specified
-then `make` will default to the first target defined in the `Makefile`.  The
-following two commands will result in the same action.
+`Makefile` includes several targets: `interactive`, `build`, `clean`, `serve`.
+You can run any of the targets by running `make [TARGET]`.  If no `TARGET` is
+specified then `make` will default to the first target defined in the
+`Makefile`.  The following two commands will result in the same action.
 
 ```bash
 # Run make with the default target: interactive
