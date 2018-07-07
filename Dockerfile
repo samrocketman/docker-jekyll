@@ -25,4 +25,4 @@ COPY * /home/webdev/
 RUN gem install bundler && bundle install
 
 # default command
-CMD jekyll serve
+CMD jekyll serve -w

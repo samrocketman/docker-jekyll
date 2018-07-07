@@ -18,3 +18,7 @@ build:
 # (there shouldn't be if you're using the Makefile).
 clean:
 	docker-compose down --rmi all
+
+# This will start serving your website right away.
+serve:
+	docker-compose up

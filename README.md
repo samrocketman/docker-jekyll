@@ -1,4 +1,9 @@
-# docker-jekyll
+# Jekyll Development made easy
+
+Learn more [about Jekyll][jekyll].
+
+This project aims to help getting started with Jekyll easy by using Docker for
+managing Jekyll dependencies.
 
 A development environment for Jekyll which solely relies on Docker to separate
 system dependencies.  This adds some sanity to jekyll website development which
@@ -80,16 +85,16 @@ this.
 
 ```bash
 # add your changes to Gemfile
-# enter the interactive environment
+# enter the interactive docker environment
 make
 
 # update Gemfile.lock
 bundle install
 
-# exit the development environment
+# exit the docekr environment
 exit
 
-# rebuild the development environment to include the new Gemfile changes
+# rebuild the docker container to include the new Gemfile changes
 make build
 
 # restart the development environment which will now include new dependencies
@@ -132,4 +137,5 @@ See also:
 [bundler]: https://bundler.io/
 [compose-v2]: https://docs.docker.com/compose/compose-file/compose-file-v2/
 [docker]: https://www.docker.com/community-edition
+[jekyll]: https://jekyllrb.com/
 [official-repos]: https://docs.docker.com/docker-hub/official_repos/
