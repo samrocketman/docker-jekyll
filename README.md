@@ -14,11 +14,6 @@ with Jekyll easy by using [Docker][docker] for managing Jekyll dependencies.
 This project is a development environment for Jekyll which solely relies on
 Docker provide all dependencies for Jekyll.
 
-This simplifies development in Ruby and Jekyll by providing an environment with
-all dependencies satisfied.  Otherwise, developing multiple Jekyll websites and
-even multiple Ruby applications will be fraught with peril since they'll likely
-have clashing dependencies if managed from the same environment.
-
 # Features
 
 - A self contained development environment based on the lightweight Alpine
